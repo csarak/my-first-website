@@ -2,44 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
+    <title>Mon Portfolio Professionnel</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Mon Portfolio</h1>
-        <p>Bienvenue sur mon site, voici mes projets et compétences !</p>
+        <p>Développeur Web et créateur de sites modernes</p>
+        <a href="#projects" class="button">Voir mes projets</a>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- À propos -->
     <section id="about" class="section">
         <h2>À propos de moi</h2>
-        <p>Je suis étudiant(e) en première année et je crée des projets Web pour apprendre HTML, CSS et GitHub Pages.</p>
-        <img src="https://via.placeholder.com/300" alt="Photo de moi">
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Mes projets</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/250" alt="Projet 1">
-            <img src="https://via.placeholder.com/250" alt="Projet 2">
-            <img src="https://via.placeholder.com/250" alt="Projet 3">
+        <div class="about-content">
+            <img src="https://via.placeholder.com/250" alt="Photo de moi">
+            <p>Je suis étudiant(e) en développement web et je crée des sites professionnels avec HTML, CSS et GitHub Pages. Je cherche à montrer mes compétences à travers ce portfolio.</p>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Tu peux me contacter à : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
-        <a class="button" href="#">Voir plus</a>
+    <!-- Compétences -->
+    <section id="skills" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
     </section>
 
+    <!-- Projets -->
+    <section id="projects" class="section">
+        <h2>Mes projets</h2>
+        <div class="gallery">
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Projet 1">
+                <p>Mini-site portfolio</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Projet 2">
+                <p>Template boutique</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/250" alt="Projet 3">
+                <p>Blog simple</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+        <p>LinkedIn : <a href="https://linkedin.com" target="_blank">mon profil</a></p>
+        <a class="button" href="#">Envoyer un message</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Mon Nom</p>
+        <p>© 2026 Mon Nom - Portfolio Professionnel</p>
     </footer>
 </body>
 </html>
