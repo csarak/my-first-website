@@ -71,7 +71,7 @@ header p {
     margin-bottom: 40px;
 }
 
-/* À propos sans photo */
+/* À propos améliorée */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -79,6 +79,28 @@ header p {
     line-height: 1.6;
     text-align: center;
     padding: 0 20px;
+}
+
+.badges {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.3s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
 }
 
 /* Compétences avec barres de progression */
