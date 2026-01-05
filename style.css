@@ -71,18 +71,14 @@ header p {
     margin-bottom: 40px;
 }
 
-/* À propos */
+/* À propos sans photo */
 .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.about-content img {
-    width: 300px;
-    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 20px;
 }
 
 /* Compétences */
@@ -137,6 +133,14 @@ header p {
     padding: 15px;
 }
 
+.project-text a.button {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    padding: 5px 12px;
+    border-radius: 30px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -156,11 +160,9 @@ footer a:hover {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
     .skills-grid, .gallery {
         flex-direction: column;
         align-items: center;
     }
 }
+
