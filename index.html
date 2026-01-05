@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon Portfolio Professionnel</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Police moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <h1>Mon Portfolio</h1>
-        <p>Développeur Web et créateur de sites modernes</p>
+        <p>Création de sites Web élégants et modernes</p>
         <a href="#projects" class="button">Voir mes projets</a>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Navigation fixe -->
+    <nav class="navbar">
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
@@ -27,7 +29,7 @@
         <h2>À propos de moi</h2>
         <div class="about-content">
             <img src="https://via.placeholder.com/250" alt="Photo de moi">
-            <p>Je suis étudiant(e) en développement web et je crée des sites professionnels avec HTML, CSS et GitHub Pages. Je cherche à montrer mes compétences à travers ce portfolio.</p>
+            <p>Je suis étudiant(e) en développement Web, passionné(e) par la création de sites élégants et performants. Mon objectif : transformer vos idées en sites professionnels.</p>
         </div>
     </section>
 
@@ -48,15 +50,24 @@
         <div class="gallery">
             <div class="project">
                 <img src="https://via.placeholder.com/250" alt="Projet 1">
-                <p>Mini-site portfolio</p>
+                <div class="project-text">
+                    <h3>Portfolio Moderne</h3>
+                    <p>Site élégant avec HTML/CSS et design responsive.</p>
+                </div>
             </div>
             <div class="project">
                 <img src="https://via.placeholder.com/250" alt="Projet 2">
-                <p>Template boutique</p>
+                <div class="project-text">
+                    <h3>Template Boutique</h3>
+                    <p>Template clair pour une boutique en ligne.</p>
+                </div>
             </div>
             <div class="project">
                 <img src="https://via.placeholder.com/250" alt="Projet 3">
-                <p>Blog simple</p>
+                <div class="project-text">
+                    <h3>Blog Moderne</h3>
+                    <p>Blog simple avec sections et galerie.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -72,6 +83,23 @@
     <!-- Footer -->
     <footer>
         <p>© 2026 Mon Nom - Portfolio Professionnel</p>
+        <p>
+            <a href="#">LinkedIn</a> | 
+            <a href="#">GitHub</a> | 
+            <a href="#">Email</a>
+        </p>
     </footer>
+
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
